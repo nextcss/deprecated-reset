@@ -1,6 +1,6 @@
 {
   "name": "@nextcss/reset",
-  "version": "0.0.5-beta",
+  "version": "0.0.6-beta",
   "description": "Reset module for Next.css.",
   "license": "MIT",
   "main": "dist/reset.css",
