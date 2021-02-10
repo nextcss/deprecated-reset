@@ -1,0 +1,37 @@
+{
+  "name": "@nextcss/reset",
+  "version": "0.0.1-beta",
+  "description": "Reset module for Next.css.",
+  "license": "MIT",
+  "main": "dist/reset.css",
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "nextcss"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Zsolt Tovis",
+    "email": "tovis.zsolt@gmail.com",
+    "url": "https://toviszsolt.github.io/"
+  },
+  "funding": "https://paypal.me/toviszsolt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextcss/npm-package-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nextcss/npm-package-template/issues"
+  },
+  "homepage": "https://github.com/nextcss",
+  "scripts": {
+    "build": "node-sass --output-style compact src/next.scss dist/reset.css",
+    "watch": "node-sass --watch --output-style compact src/next.scss dist/reset.css"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
