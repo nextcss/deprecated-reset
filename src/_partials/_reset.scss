@@ -8,7 +8,6 @@
 
 html {
   font-size: 14px;
-  overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -16,6 +15,7 @@ html {
 
 body {
   touch-action: pan-x pan-y;
+  overscroll-behavior: none;
   max-width: 100vw;
 }
 
