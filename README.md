@@ -191,3 +191,7 @@ address {
   font: inherit;
 }
 ```
+
+## License
+
+MIT License. Copyright (c) 2021 Zsolt Tovis
