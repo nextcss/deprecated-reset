@@ -4,15 +4,14 @@
   box-sizing: border-box;
   -webkit-user-drag: none;
   outline: none;
-  border: none;
 }
 
 html {
   font-size: 14px;
-  text-size-adjust: 100%;
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -36,6 +35,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font: inherit;
 }
 
 a {
@@ -48,11 +48,66 @@ img {
   height: auto;
 }
 
-svg {
-  display: block;
+input,
+textarea,
+select {
+  font: inherit;
+  font-size: 16px;
+}
+
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: inherit;
 }
 
 input,
-textarea {
+textarea,
+select {
+  font: inherit;
   font-size: 16px;
+  border: 1px solid;
+  border-radius: 0;
+  background-clip: padding-box;
+}
+
+iframe {
+  border: 0;
+}
+
+form,
+figure,
+pre,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid;
+}
+
+address {
+  font: inherit;
 }
