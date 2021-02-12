@@ -97,6 +97,17 @@ a {
 }
 ```
 
+Reset `button` tag
+
+```css
+button {
+  background-color: inherit;
+  border: 0;
+  color: inherit;
+  padding: 0;
+}
+```
+
 Limit image `width` and reset `border`.
 
 ```css
