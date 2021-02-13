@@ -1,6 +1,6 @@
 {
   "name": "@nextcss/reset",
-  "version": "0.1.3-beta",
+  "version": "0.1.4-beta",
   "description": "Reset module for Next.css.",
   "license": "MIT",
   "main": "dist/reset.css",
@@ -26,10 +26,12 @@
   "bugs": {
     "url": "https://github.com/nextcss/reset/issues"
   },
-  "homepage": "https://github.com/nextcss",
+  "homepage": "https://next-css.com",
   "scripts": {
-    "build": "node-sass --output-style compact src/reset.scss dist/reset.css",
-    "watch": "node-sass --watch --output-style compact src/reset.scss dist/reset.css"
+    "build": "npm run build:dist && npm run build:test",
+    "watch": "node-sass --watch --output-style compact src/reset.scss dist/reset.css",
+    "build:dist": "node-sass --output-style compressed src/reset.scss dist/reset.css",
+    "build:test": "node-sass --output-style compact src/reset.scss test/reset.css"
   },
   "devDependencies": {
     "node-sass": "^5.0.0"
