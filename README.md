@@ -88,6 +88,14 @@ p {
 }
 ```
 
+Fix dynamic `small` tag
+
+```css
+small {
+  font-size: 85%;
+}
+```
+
 Reset `color` and `text-decoration` on links.
 
 ```css
