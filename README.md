@@ -1,13 +1,15 @@
 # Next.css Reset Module
 
-Reset CSS Module is part of Next.css framework. This module resets default CSS styles for your Next.css project.
+Reset CSS Module is part of [Next.css framework](https://github.com/nextcss). This module resets default CSS styles for your Next.css project.
 You can use in all modern websites with module bundlers, like webpack, rollup, parcel.
+
+**[Next.css on GitHub](https://github.com/nextcss)**
 
 ## How to Install
 
 You can install with **npm** or **yarn** package managers.
 
-```
+```shell
 npm i @nextcss/reset
 yarn add @nextcss/reset
 ```
@@ -16,7 +18,7 @@ yarn add @nextcss/reset
 
 Simple import to your project, this module contains only element selector rules.
 
-```
+```js
 import '@nextcss/reset';
 ```
 
@@ -209,6 +211,35 @@ Reset `font` on `adrress` tag
 address {
   font: inherit;
 }
+```
+
+## Production build
+
+We strongly recommend to use `postcss` with `autoprefixer` and `postcss-purgecss`. This stack will extend the CSS rules with browser specific prefixes, like `-webkit` and will remove unused styles in production build.
+
+```shell
+npm i -D postcss autoprefixer @fullhuman/postcss-purgecss
+```
+
+Our `postcss.config.js` config. You need to configure the `content` parameter for your project.
+
+```js
+module.exports = {
+  plugins:
+    process.env.NODE_ENV === 'production'
+      ? [
+          'autoprefixer',
+          [
+            '@fullhuman/postcss-purgecss',
+            {
+              content: ['./{pages,components}/**/*.{js,jsx}'],
+              safelist: ['html', 'body'],
+              defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+            },
+          ],
+        ]
+      : ['autoprefixer'],
+};
 ```
 
 ## License
