@@ -34,6 +34,6 @@
     "build:test": "node-sass --output-style compact src/reset.scss test/reset.css"
   },
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^6.0.1"
   }
 }
