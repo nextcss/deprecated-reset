@@ -24,6 +24,13 @@ body {
     'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
 h1,
 h2,
 h3,
@@ -51,7 +58,9 @@ button {
   padding: 0;
 }
 
-img {
+img,
+svg {
+  display: block;
   max-width: 100%;
   height: auto;
   border: none;
@@ -65,6 +74,10 @@ select {
   border: 1px solid;
   border-radius: 0;
   background-clip: padding-box;
+}
+
+textarea {
+  resize: none;
 }
 
 fieldset {
