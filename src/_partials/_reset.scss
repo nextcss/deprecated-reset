@@ -52,6 +52,9 @@ a {
 }
 
 button {
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
   background-color: inherit;
   border: 0;
   color: inherit;
